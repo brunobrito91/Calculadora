@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="br.edu.ifspsaocarlos.sdm.calculadora.CalculadoraActivity">
+
+    <EditText
+        android:id="@+id/lcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:inputType="numberDecimal"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/botao_raiz_quadrada"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickRaizQuadrada"
+            android:text="@string/raiz_quadrada"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_potencia"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickPotencia"
+            android:text="@string/potencia"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_fatorial"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickFatorial"
+            android:text="@string/fatorial"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_limpa"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickLimpa"
+            android:text="@string/limpa"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/botao_7"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick7"
+            android:text="@string/n_7"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_8"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick8"
+            android:text="@string/n_8"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_9"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick9"
+            android:text="@string/n_9"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_soma"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickSoma"
+            android:text="@string/soma"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/botao_4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick4"
+            android:text="@string/n_4"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick5"
+            android:text="@string/n_5"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick6"
+            android:text="@string/n_6"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_subtracao"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickSub"
+            android:text="@string/subtracao"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/botao_1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick1"
+            android:text="@string/n_1"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick2"
+            android:text="@string/n_2"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick3"
+            android:text="@string/n_3"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_multiplicacao"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickMult"
+            android:text="@string/multiplicacao"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/botao_0"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClick0"
+            android:text="@string/n_0"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_ponto"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickPonto"
+            android:text="@string/ponto"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_resultado"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickRes"
+            android:text="@string/resultado"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/botao_divisao"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="onClickDiv"
+            android:text="@string/divisao"
+            android:textSize="50sp" />
+    </LinearLayout>
+</LinearLayout>
